@@ -12,3 +12,5 @@ const fetchCountries = async name => {
     throw new Error(`Error fetching data: ${error.message}`);
   }
 };
+
+export default fetchCountries;
