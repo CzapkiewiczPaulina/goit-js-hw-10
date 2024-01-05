@@ -1,7 +1,3 @@
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
 
 {
   "name": "parcel-project-template",
