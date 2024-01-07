@@ -1,4 +1,5 @@
 import debounce from 'lodash.debounce';
+import notiflix from 'notiflix';
 import fetchCountries from './fetchCountries.js';
 
 const searchBox = document.getElementById('search-box');
