@@ -74,9 +74,9 @@ function createCountryCard(country) {
   const countryPopulation = document.createElement('p');
   countryPopulation.textContent = `Population: ${country.population || 'N/A'}`;
   const countryLanguages = document.createElement('p');
-  countryLanguages.textContent = `Languages: ${
-    country.languages ? country.languages.join(', ') : 'N/A'
-  }`;
+  countryLanguages.textContent = `Languages: ${country.languages
+    .map(lang => lang.name)
+    .join(', ')}`;
 
   countryInfo.appendChild(countryName);
   countryInfo.appendChild(countryCapital);
