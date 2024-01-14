@@ -1,7 +1,7 @@
 const fetchCountries = async name => {
   try {
     const response = await fetch(
-      `https://restcountries.com/v2/name/${name}?fields=name,capital,population,flags,Languages: [object Object]`
+      `https://restcountries.com/v2/name/${name}?fields=name,capital,population,flags,Languages`
     );
     if (!response.ok) {
       throw new Error(response.statusText);
